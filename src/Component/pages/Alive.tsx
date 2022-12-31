@@ -25,7 +25,7 @@ export default function Alive(props: any) {
     }, [page])
     console.log(data)
 
-    const aliveCharacter = characterAlive.filter((character: any) => character.name?.toLowerCase()?.includes(props.search))?.map((person: any, index: number) => (
+    const aliveCharacter = characterAlive.filter((character: any) => character.name?.toLowerCase()?.includes(props.search?.toLowerCase()))?.map((person: any, index: number) => (
         <div key={index} className="d-inline-flex flex-column m-3" id="card">
             <img className="rounded-top" width="100%" src={person.image} alt="Character in cartoon" />
             <span className="bg-primary p-2 rounded-bottom" id="nameFontSize">{person.name} </span>
