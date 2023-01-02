@@ -22,7 +22,6 @@ export default function Dead(props: any) {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, [page])
-    console.log(data)
 
     const deadCharacter = characterDead.filter((character: any) => character.name?.toLowerCase()?.includes(props.search?.toLowerCase()))?.map((person: any, index: number) => (
         <div key={index} className="d-inline-flex flex-column m-3" id="card">

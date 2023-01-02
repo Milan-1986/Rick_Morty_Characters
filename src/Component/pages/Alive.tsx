@@ -23,7 +23,6 @@ export default function Alive(props: any) {
 
         return () => window.removeEventListener('scroll', handleScroll);
     }, [page])
-    console.log(data)
 
     const aliveCharacter = characterAlive.filter((character: any) => character.name?.toLowerCase()?.includes(props.search?.toLowerCase()))?.map((person: any, index: number) => (
         <div key={index} className="d-inline-flex flex-column m-3" id="card">
