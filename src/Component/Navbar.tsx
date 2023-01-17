@@ -22,7 +22,7 @@ export function Navbar() {
                         <div className="d-flex flex-wrap justify-content-center ms-auto">
                             <ul className="navbar-nav ">
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/any"
+                                    <NavLink className="nav-link" to="/"
                                         style={({ isActive }) =>
                                         isActive ? activeStyle : undefined
                                       }

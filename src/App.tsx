@@ -21,7 +21,7 @@ function App() {
         <Header handleSearch={handleSearch}/>
         <Navbar />
         <Routes>
-          <Route path="/any" element={<Any search={search}/>}></Route>
+          <Route path="/" element={<Any search={search}/>}></Route>
           <Route path="alive" element={<Alive search={search}/>}></Route>
           <Route path="dead" element={<Dead search={search}/>}></Route>
           <Route path="unknown" element={<Unknown search={search}/>}></Route>
